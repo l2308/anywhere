@@ -1,0 +1,8 @@
+#!name=本机回环
+#!desc=把 127.0.0.1 反射回本设备，供设备端开发工具使用（需 Surge Mac 6.10.0+/iOS 5.23.0+）
+
+[General]
+tun-included-routes = %INSERT% 127.0.0.1/32
+
+[IP Rewrite]
+127.0.0.1 = reflect
