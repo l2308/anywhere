@@ -1,0 +1,24 @@
+#!name=Muse
+#!desc=Muse (Meta 个人智能体) Surge 分流规则：相关域名走代理
+
+[Rule]
+# ============ Muse 官方服务域名 ============
+# Muse 网页版 / 主站
+DOMAIN-SUFFIX,muse.ai,Proxy
+# Muse 连接器与账号授权（如 Gmail / 日历连接跳转）
+DOMAIN-SUFFIX,agent.meta.ai,Proxy
+# Meta AI 相关服务域
+DOMAIN-SUFFIX,ai.meta.com,Proxy
+
+# ============ 可选：Meta 账号体系 ============
+# 如果登录、鉴权异常，再打开下面两行
+# DOMAIN-SUFFIX,accountscenter.meta.com,Proxy
+# DOMAIN-SUFFIX,meta.com,Proxy
+
+# ============ 说明 ============
+# 1. 把上面所有的 Proxy 换成你 Surge 配置里实际的策略组名
+#   （比如：HK、US、日本、自动选择 等）。
+# 2. 如果 App 仍有部分功能连不上，在 Surge 里打开「请求日志」，
+#    找到被直连/拒绝的 meta / muse 相关域名，按同样格式加进来。
+# 3. 也可以把这几行直接复制到你现有配置的 [Rule] 段最前面
+#   （规则按从上到下匹配，越靠前优先级越高）。
