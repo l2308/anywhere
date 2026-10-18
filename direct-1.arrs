@@ -1,7 +1,7 @@
 # Generated 2026-10-16; destination-only conversion of current production routing.
 # Node subscription is separate. Set AI / YouTube / TikTok / international sets to PROXY or a chosen node in the app.
 # Source: MetaCubeX/meta-rules-dat and existing managed rules. See manifest.json.
-name = 国内与指定服务直连 1
+name = 中国直连 1
 routing = 1
 
 2, 0.zone
